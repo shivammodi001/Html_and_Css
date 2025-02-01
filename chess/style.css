@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+   
+    height: 50vw;
+    width: 50vw;
+}
+.white{
+    background-color: white;
+  
+}
+.black{
+    background-color: black;
+   
+}

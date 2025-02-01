@@ -1,0 +1,41 @@
+.container{
+    background-color: aquamarine;
+    height: 1000px;
+    /* display : flex -> main-axis(horizontal axis) me chale jayega */
+    display: flex;
+    /* flex direction by default row hota h but change kr skte h isee */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify content "main-axis" ke around work krta hain */
+    
+    /* align-items: center; */
+    /* by default aling item strech rehta h */
+    /*aling-item "cross-axis ke around workkrta hain*/
+    /* aling-item: base-line krne se content 1 hi line me aling ho jate hain */
+
+    /* flex-wrap: */
+    flex-wrap: wrap;
+
+    align-content: center;
+    /* content ke bich ki spacing ko handle kr skye h agar content bahut jayda hoga toh */
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: yellow;
+}

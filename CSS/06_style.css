@@ -1,0 +1,47 @@
+/* 
+-> The z-index property specifies the stack order of an element.
+-> An element with greater stack order is always in front of an element with a lower stack order.
+*/
+
+/* 
+Note: 
+      z-index only works on positioned elements (position: absolute,
+      position: relative, position: fixed, or position: sticky) and flex 
+      items (elements that are direct children of display:flex elements).
+*/
+
+
+/* default z-index auto hota hain */
+.container{
+    background-color: aqua;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+.box1{
+    background-color: red;
+    position: relative;
+    left: 90px;
+    z-index: 5;
+}
+.box2{
+    background-color: fuchsia;
+    position: relative;
+    top: 10px;
+    left: 35px;
+    z-index: 1;
+    /* z-index: -1;  conainer ke piche hi chala ja raha h*/
+}
+.box3{
+    background-color: orangered;
+    position: relative;
+    z-index: 2;
+}
+.box4{
+    background-color: navy;
+}

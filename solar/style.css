@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    min-width: 100vw;
+    height: 15vh;
+    /* max-width: 100%; */
+    position: fixed;
+    padding: 1rem;
+    border: 2px solid rgb(208, 204, 204);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px rgb(208, 204, 204);
+}
+.logo img{
+    /* padding: 0.8rem; */
+    height: 50px;
+    width: 120px;
+}
+.nav{
+    margin-top: 1rem; 
+}
+.nav a{
+    font-size:20px ;
+    margin: 20px;
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav a:hover{
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.log button{
+    background-color: orange;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(208, 204, 204);;
+    cursor: pointer;   
+}
+
+.dash button{
+    cursor: pointer;   
+
+    background-color: blue;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(208, 204, 204);;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.log button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.dash button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.hero{
+    overflow: hidden;
+    /* gap: 100px; */
+    /* width: 100vw; */
+    /* background-color: greenyellow; */
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 200px; */
+}
+.left{
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+}
+.left h1{
+    color: rgb(40, 40, 65);
+    font-size: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.left p{
+    font-weight: bold;
+    color: rgb(41, 41, 78);
+    letter-spacing: 2px;
+    font-size: 1.2rem
+}
+span{
+    color: orange;
+}
+.right{
+    /* background-color: red; */
+    padding: 4rem;
+}
+.right img{
+    height: 200px;
+    /* float: left; */
+    /* margin-top: 100px; */
+    /* margin-left: 20px; */
+}
+.media,.click{
+    /* background-color: burlywood;
+    height: 100px; */
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.media button{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1rem;
+   padding: 5px;
+   border: none;
+   font-weight: bolder;
+   border-radius: 10px;
+   box-shadow: 0 5px 5px whitesmoke;
+    background-color: black;
+    color: white;
+}
+.buy button{
+    background-color: orange;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+}
+.video button{
+    /* background-color: orange; */
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    border:2px solid orange;
+    border-radius: 10px;
+}
+.article{
+    overflow: hidden;
+    background:linear-gradient(rgb(238, 190, 153), orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border:2px solid black;
+    min-width: 100vw;
+}
+.article h2{
+    font-family:  monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.article h3{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.article p{
+    margin-top: 20px;
+}
+.cards{
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 3rem;
+   justify-content: space-evenly;
+    
+}
+.card{
+    border-radius:20px ;
+    box-shadow: 0px 8px 10px teal;
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    margin: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width:717px) {
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .article{
+        min-width: 100vw;
+
+        width: 100vw;
+    }
+    .article .cards{
+       flex-direction: column; 
+        
+    }
+    .buttons{
+        flex-direction: column; 
+    }
+    .logo img{
+        /* padding: 0.8rem; */
+        height: 30px;
+        width: 80px;
+    }
+    .log button{
+        font-size: 0.8rem;
+        padding: 0.8rem;
+        font-weight: bold;
+    }
+    .dash button{
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    background-color: aquamarine;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+}
+.box1{
+    background-color: red;
+    flex-shrink: 2;
+}
+.box2{
+    background-color: blue;
+    flex-grow: 1;
+}
+.box3{
+    background-color: green;
+    /* order: -1; */
+    /* by default sabka order zero hpta h and order hum ranking krke item ko arrange krte hain*/
+}
+.box4{
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+/* flex-item */
+/*1> order -> it define the order of element */
+/* by default or is zero */
+
+/* 2> flex-grow -> 
+The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+Note: If the element is not a flexible item, the flex-grow property has no effect.
+Default value:	0
+*/
+
+/* 3> flex-shrink-> 
+The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+Default value:	1
+*/
+
+/* 
+4> flex-basis: main-axix ke around width change kr dega
+The flex-basis property specifies the initial length of a flexible item.
+Note: If the element is not a flexible item, the flex-basis property has no effect.
+Default value:	auto
+*/
+
+
+/* 
+5> align-self: cross-axis ke around shift hota hain
+The align-self property specifies the alignment in the block direction for the selected item inside a flexbox or grid container.
+Default value:	auto
+*/
+
+/* shorthand of flex item
+flex: [flex-grow][flex-shrink][flex-basis]
+*/

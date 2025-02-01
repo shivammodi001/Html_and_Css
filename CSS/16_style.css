@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.conatiner{
+    background-color: wheat;
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width:200px;
+    background-color: orangered;
+    font-size: 4rem;
+    border: 5px solid black;
+    /* transition-property: all; */
+    transition: all 3s linear;
+}
+
+/* 2d transformation */
+.box:hover{
+     /* transform: translate(400px,300px); */
+     /* transform: scale(2,3); */
+     /* transform: rotate(360deg); */
+     /* transform: skew(40deg);*/
+
+     /* use all property in one line*/
+    /* transform: translate(-400px,200px) scale(2) rotate(-360deg);  */
+    
+    /* transform-origin: bottom right; */
+    }
+/* agar single translate : move in x-axix */
+/* if we provide two double values in translate : it will x and y axis both  */
+/* X-axis:positive->right move else left */
+/* y-axis:positive->bottom move else top */
+
+/* scale: by using scale property  will increse the size of the object width by x time and height by y times   */
+
+/* rotate use to rotate the box in clock wise with positive values */
+/* transform origin ka use krke 1 fixed point se roatate kr skte hain */
+
+/* skew tilled the object in any degree */
+

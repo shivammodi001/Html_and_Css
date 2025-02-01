@@ -1,0 +1,73 @@
+/* 
+position: relative 
+-> yeh apni original position nhi chhod h
+top:  -> yeh apne original pos ke relative top se move karega
+bottom: ->yeh apne original pos ke relative bottom se move karega
+left:  ->yeh apne original pos ke relative left se move karega
+right:  ->yeh apne original pos ke relative right se move karega
+*/
+
+
+/* 
+position :absolute
+absolute krne se object apni position ko chhod deta hain orr uski pos koi 
+orr le skta h
+jab koi operation object k uppr perfrom krte h toh toh woh apne
+parent ke positioning ke hisaab se change hoga
+Agar parent ki koi positioning nhi h toh parent ke parent nhi toh viewport ke hissab se
+
+*/
+
+
+/* 
+position: fixed;
+fixed krne se object apni original posotion chhod deta but jab 
+koi operation perform krenege toh viewport ke hisaab se changes honge and 
+uski position wahin par fix ho jayegi
+*/
+
+
+/* 
+position: sticky;
+This CSS position property allows the elements to stick when the scroll
+reaches a certain point. Depending on the scroll position, a sticky 
+element toggles between fixed and relative. The element will be
+positioned relative until the specified position of offset is 
+met in the viewport. Then, similar to position: fixed, the element sticks in one place.
+*/
+
+
+
+.container{
+    background-color: aqua;
+    margin-top: 30vh;
+    position: relative;
+    height: 1000px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+.box1{
+    background-color: red;
+    position: absolute;
+    bottom: 10px;
+}
+.box2{
+    background-color: rgb(4, 0, 255);
+    position: relative;
+    top: 20px;
+}
+.box3{
+    background-color: rgb(34, 255, 0);
+    position: fixed;
+    top: 20px;
+    right: 50px;
+}
+.box4{
+    background-color: rgb(255, 251, 0);
+    position: sticky;
+    top:20px;
+}

@@ -1,0 +1,14 @@
+/* 
+external css
+*/
+/* #h1{
+    color: violet;
+    background-color: black;
+} */
+
+/* uska color change karo jiska draggable true h */
+h1[draggable="true"]{
+    color: white;
+    background-color: black;
+}
+

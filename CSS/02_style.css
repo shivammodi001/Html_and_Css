@@ -1,0 +1,42 @@
+h1{
+    background-color: black;
+    /* change by rgb:: 0-255 , total 8 bit*/
+    /* color: rgb(12, 220, 10); */
+     color: rgba(12, 220, 10,0.6);/*a stand for alpha transparency  */
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    /* 5. HSL Colors
+HSL stands for hue, saturation, and lightness. Hue is the
+color type (a degree on the color wheel from 0 to 360),
+saturation is the intensity of the color (0% is grayscale, 100%
+is fully saturated), and lightness defines how light or dark the
+color is (0% is black, 100% is white).
+ */
+ color: hsl(228, 55%, 24%);
+ color: hsla(228, 55%, 24%,0.9);
+ font: bolder;
+ font-size: large;
+}
+
+h2{
+    /* Hexadecimal Colors :: [ # with 6 char(0-f)] */
+    /* color: #cd2df5; */
+    color: #a13818ff;
+}
+
+/* pixel size determine by display size */
+/* body and head ka default size 16px hota hain */
+/* em -> relative to parent font size(mtlb apne parent ke respect me * uss element ka size in em) */
+/* rem ->(relative tohtml font size) lenght and width root ke uper depen krta */
+/* % : relative parent font size */
+
+/* viewport -> two type :: <i>vh and <ii>vw
+    vw->(% of viewport width)
+    vh->(% of viewport height)
+
+*/

@@ -1,0 +1,43 @@
+
+/* <1>
+text align center krne se block level element ke content center me chale jate h
+And inline elenet par yeh pura element will shifted towords center
+*/
+/*
+.container{
+    background-color: aqua;
+    text-align: center;
+}
+h1{
+    background-color: yellow;
+}
+p{
+    background-color: pink;
+}
+button{
+    background-color: orangered;
+} */
+
+p{
+    text-indent: 100px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    background-color: olivedrab;
+    text-align-last: center;
+    /* from this we can perform diff option on last line of para */
+
+}
+
+h1{
+    text-shadow: 5px 4px ;
+    text-decoration: overline underline;
+    text-decoration-color: aqua;
+    
+    /* direction: rtl;
+    unicode-bidi: bidi-override; */
+    /* text-transform: lowercase; */
+    text-transform: uppercase;
+} 
+span{
+    vertical-align: super;
+}
